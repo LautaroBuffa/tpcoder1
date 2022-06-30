@@ -1,0 +1,262 @@
+h1 {
+    margin-top: 80px;
+    text-align: center;
+    background-color: rgb(248, 245, 245);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-image: url("https://img.freepik.com/foto-gratis/fondo-gris-pintado_53876-94041.jpg?w=1060&t=st=1654799232~exp=1654799832~hmac=59c8bf8cf78171f443dc6ddcbc9113679781b30c112ae71919043e7c28c9740e");
+}
+
+#logo {
+    position:absolute;
+}
+
+h2 {
+    text-align: center;
+    background-color: dimgray;
+    color: black;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 30px;
+
+}
+
+#chat {
+    transition: 0s;
+    color: blue;
+    background-color: aqua;
+}
+#chat:hover{
+background-color: rgb(16, 237, 16);
+color: yellow;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-width: 5px;
+    border-color: black;
+    width: 100%;
+    border-style: double;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+#dejacontacto {
+    background-position: 610px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+table {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding: 5px;
+    margin-top: 50px;
+    width: 100%;
+}
+.imagenprod{
+    width: 450px;
+}
+
+a {
+    transition: 0s;
+    color: black;
+    background-color: rgb(242, 239, 239);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+a:hover{
+    color: white;
+    background-color: black;
+}
+
+nav {
+    display: grid;
+    justify-content: center;
+}
+
+div {
+    display: grid;
+    justify-content: center;
+}
+
+header {
+    background-image: url("https://image.posterlounge.es/images/l/1896910.jpg");
+    background-position-y: 30%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#listaproductos {
+    color: white;
+    display: grid;
+    list-style-type: none;
+    justify-content: start;
+    width: 100%;
+    border: 5px;
+    border-color: black;
+    border-style: groove;
+    background-color: black;
+    margin-top: 50px;
+
+}
+
+#listaproductos {
+    transition: 0s;
+}
+#listaproductos:hover{
+    color: black;
+    background-color: bisque;
+}
+
+input{
+    display: flex;
+    justify-content: center;
+    padding-left: 5px;
+    width: 300px;
+    transition: 0s;
+}
+input:hover{
+    color: white;
+    background-color: black;
+}
+@media  screen and (min-width:320px) {
+    #logo {
+        height: 50px;
+        top: 70px;
+        }
+    .head{
+        grid-area: head;
+    }
+    .medio{
+        grid-area: medio;
+    }
+    .pie{
+        grid-area: pie;
+    }
+    .cuerpo{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "head""medio""pie";
+    }
+
+#table1 {
+    width: 80%;
+    display:grid;
+    align-content: center;
+    justify-content: center;
+    grid-area: tabla;
+    margin-left: 10%;
+}
+.imag{
+    display:grid;
+    justify-content: center;
+    width:100%;
+}
+#prod {
+    grid-area: prod;
+}
+
+#foot {
+    grid-area: foot;
+}
+
+#bod {
+    display: grid;
+    grid-template-columns:auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "prod""tabla""foot";
+}
+#listaproductos{
+display: none;
+}
+#table{
+    display: none;
+ }
+.uli {
+    display: inline-block;
+    list-style-type: none;
+    text-align: center;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+}
+@media  screen and (min-width:1200px) {
+    .uli {
+        display: inline-block;
+        list-style-type: none;
+        text-align: center;
+        padding-left: 10px;
+    }
+    #logo {
+        height: 100px;
+        top: 50px;
+        }
+    .head{
+        grid-area: head;
+    }
+    .medio{
+        grid-area: medio;
+    }
+    .pie{
+        grid-area: pie;
+    }
+    .cuerpo{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "head""medio""pie";
+    }
+    #listaproductos {
+        grid-area: productos;
+}
+#table {
+    grid-area: tabla;
+}
+
+#prod {
+    grid-area: prod;
+}
+
+#foot {
+    grid-area: foot;
+}
+
+#bod {
+    display: grid;
+    grid-template-columns: 13% auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "prod prod""productos tabla""foot foot";
+}
+#listaproductos{
+    display: grid
+}
+#table1{
+    display: none;
+ }
+ #table{
+    display: grid;
+ }
+}
+
