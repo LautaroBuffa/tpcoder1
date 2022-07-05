@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body id="bod">
   <header id="prod">  <img id="logo" src="https://i.pinimg.com/originals/bb/59/bc/bb59bcf55306075b510e6a3aa24f4187.jpg" alt="Logo">
-    <h1>PRODUCTOS</h1>
-    <nav><ul class="uli">
+    <h1 id="tituloprod">PRODUCTOS</h1>
+    <nav><ul id="uliprod" class="uli">
         <li class="uli" id="inicio">
             <a href="../index.html">INICIO</a>
         </li>
@@ -56,6 +57,37 @@
             <li>Cocina</li>
         </ul>
     </ul>
+    <div id="buscador" class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">INICIO</a>
+          <button  class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul  class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="https://api.whatsapp.com/send?phone=3516259111">WHATSAPP</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/empresa.html">NOSOTROS</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  COMPRAR
+                </a>
+                <ul  class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">VENTA MAYORISTA</a></li>
+                  <li><a class="dropdown-item" href="#">VENTA MINORISTA</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input id="search"  type="search" placeholder="Search" aria-label="Search">
+              <button id="boton" class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
 
     <table id="table" border="2" cellpading="3" cellspacing="2">
     <tr>
@@ -86,5 +118,7 @@
     <div> 
         <h3>La mejor Calidad, Experincia y con Garantia de fabrica</h3>
        </div>
-</footer></body>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
 </html>

@@ -139,6 +139,16 @@ input:hover{
     color: white;
     background-color: black;
 }
+#search {
+    display: flex;
+    width: 300px;
+    height: 30px;
+    background-color: black;
+    margin: 3px;
+}
+#boton{
+    background-color: rgb(214, 209, 209);
+}
 
 @media  screen and (min-width:320px) {
     #logo {
@@ -188,6 +198,10 @@ input:hover{
     grid-template-rows: auto auto auto;
     grid-template-areas: "prod""tabla""foot";
 }
+#tituloprod{
+    margin-top: 20%;
+    margin-bottom: 20%;
+}
 #listaproductos{
 display: none;
 }
@@ -201,7 +215,6 @@ display: none;
     padding-left: 10px;
     padding-top: 5px;
 }
-
  #card1{
     width:100%;
     padding: 5%;
@@ -250,9 +263,14 @@ display: none;
     grid-template-rows: auto auto auto auto auto;
     grid-template-areas: "cabeza" "presentacion" "card1" " card2" "card3" "card4" "pies";
 }
+#buscador{
+    display: none;
+}
+
 
 }
 @media  screen and (min-width:1200px) {
+ 
     #card1{
         width:100%;
         padding: 5%;
@@ -297,6 +315,9 @@ display: none;
         grid-template-rows: auto auto auto auto;
         grid-template-areas: "cabeza cabeza cabeza cabeza" "carrusel carrusel carrusel carrusel" "card1 card2 card3 card4" "pies pies pies pies";
     }
+    #cabeza{
+        width: 100%;
+    }
     .uli {
         display: inline-block;
         list-style-type: none;
@@ -328,6 +349,10 @@ display: none;
 #table {
     grid-area: tabla;
 }
+#buscador{
+    display: grid;
+    grid-area: buscador;
+}
 
 #prod {
     grid-area: prod;
@@ -340,8 +365,15 @@ display: none;
 #bod {
     display: grid;
     grid-template-columns: 13% auto;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: "prod prod""productos tabla""foot foot";
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "prod prod" "buscador buscador" "productos tabla""foot foot";
+}
+#tituloprod{
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+#uliprod{
+    display: none;
 }
 #listaproductos{
     display: grid
