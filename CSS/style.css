@@ -13,7 +13,7 @@ body {
     position:absolute;
 }
 
-h2 {
+.titulo {
     text-align: center;
     background-color: dimgray;
     color: black;
@@ -39,6 +39,7 @@ h3 {
     display: flex;
     justify-content: center;
     text-align: center;
+    align-content: center;
     margin: 5px;
     padding-left: 5px;
     padding-right: 5px;
@@ -46,7 +47,9 @@ h3 {
     padding-bottom: 5px;
     border-width: 5px;
     border-color: black;
-    width: 80%%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
     border-style: double;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -78,16 +81,6 @@ table {
     width: 450px;
 }
 
-a {
-    transition: 0s;
-    color: black;
-    background-color: rgb(242, 239, 239);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-a:hover{
-    color: white;
-    background-color: black;
-}
 
 nav {
     display: grid;
@@ -266,6 +259,16 @@ display: none;
 #buscador{
     display: none;
 }
+a {
+    transition: 0s;
+    color: black;
+    background-color: rgb(242, 239, 239);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+a:hover{
+    color: white;
+    background-color: black;
+}
 
 
 }
@@ -303,12 +306,53 @@ display: none;
         grid-area: cabeza;
     }
     #carrusel{
-        display: grid;
+        display: flex;
+        justify-items: center;
+        align-items: center;
         grid-area: carrusel;
     }
     #pies{
         grid-area: pies;
     }
+    #parrafoindex{
+        display: flex;
+        margin: 1px;
+    }
+    #tituloindex{
+        display: flex;
+        background-color: dimgray;
+        background-repeat: no-repeat;
+    }
+    .textoindex{
+        flex-direction: column;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-width: 5px;
+        border-color: black;
+        width: 30%;
+        height: 50%;
+        border-style: double;
+        margin: 1%;
+        color: white;
+        display: flex;
+        justify-content: first baseline;
+        align-items: flex-start;
+    }
+    
+    #carouselExampleControls{
+        display: flex;
+        width: 60%;
+        margin: 5%;
+        border-style: double;
+        border-color: black;
+        border-radius: 5px;
+        padding: 1%;
+        background-color: bisque;
+     
+    
+     }
     #cerpoindex{
         display: grid;
         grid-template-columns: auto auto auto;
@@ -384,22 +428,20 @@ display: none;
  #table{
     display: grid;
  }
- #carouselExampleControls{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    width: 90%;
-    margin: 5%;
-    border-style: double;
-    border-color: black;
-    border-radius: 5px;
-    padding: 1%;
-    background-color: bisque;
  
-
- }
  .presentacion{
-    display: none;
+display: none;
  }
+ a {
+    transition: 0s;
+    color: black;
+    background-color: rgb(242, 239, 239);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+a:hover{
+    color: white;
+    background-color: black;
+}
+
 }
 
