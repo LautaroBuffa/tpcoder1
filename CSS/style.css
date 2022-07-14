@@ -1,447 +1,435 @@
 h1 {
-    margin-top: 80px;
-    text-align: center;
-    background-color: rgb(248, 245, 245);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-top: 80px;
+  text-align: center;
+  background-color: rgb(248, 245, 245);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 body {
-    background-image: url("https://img.freepik.com/foto-gratis/fondo-gris-pintado_53876-94041.jpg?w=1060&t=st=1654799232~exp=1654799832~hmac=59c8bf8cf78171f443dc6ddcbc9113679781b30c112ae71919043e7c28c9740e");
+  background-image: url("https://img.freepik.com/foto-gratis/fondo-gris-pintado_53876-94041.jpg?w=1060&t=st=1654799232~exp=1654799832~hmac=59c8bf8cf78171f443dc6ddcbc9113679781b30c112ae71919043e7c28c9740e");
 }
 
 #logo {
-    position:absolute;
+  position: absolute;
 }
 
 .titulo {
-    text-align: center;
-    background-color: dimgray;
-    color: black;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin-bottom: 30px;
-
+  text-align: center;
+  background-color: dimgray;
+  color: black;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-bottom: 30px;
 }
 
 #chat {
-    transition: 0s;
-    color: blue;
-    background-color: aqua;
+  transition: 0s;
+  color: blue;
+  background-color: aqua;
 }
-#chat:hover{
-background-color: rgb(16, 237, 16);
-color: yellow;
+
+#chat:hover {
+  background-color: rgb(16, 237, 16);
+  color: yellow;
 }
 
 h3 {
-    display: flex;
-    justify-content: center;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  margin: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-width: 5px;
+  border-color: black;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-style: double;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#dejacontacto {
+  background-position: 610px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+table {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  padding: 5px;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.imagenprod {
+  width: 450px;
+}
+
+nav {
+  display: grid;
+  justify-content: center;
+}
+
+.cuerpo .medio {
+  display: grid;
+  justify-content: center;
+}
+
+header {
+  background-image: url("https://image.posterlounge.es/images/l/1896910.jpg");
+  background-position-y: 30%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#listaproductos {
+  color: white;
+  display: grid;
+  list-style-type: none;
+  justify-content: start;
+  width: 100%;
+  border: 5px;
+  border-color: black;
+  border-style: groove;
+  background-color: black;
+  margin-top: 50px;
+}
+
+#listaproductos {
+  transition: 0s;
+}
+
+#listaproductos:hover {
+  color: black;
+  background-color: bisque;
+}
+
+input {
+  display: flex;
+  justify-content: center;
+  padding-left: 5px;
+  width: 300px;
+  transition: 0s;
+}
+
+input:hover {
+  color: white;
+  background-color: black;
+}
+
+#search {
+  display: flex;
+  width: 300px;
+  height: 30px;
+  background-color: black;
+  margin: 3px;
+}
+
+#boton {
+  background-color: rgb(214, 209, 209);
+}
+
+@media screen and (min-width: 320px) {
+  #logo {
+    height: 50px;
+    top: 70px;
+  }
+  .head {
+    grid-area: head;
+  }
+  .medio {
+    grid-area: medio;
+  }
+  .pie {
+    grid-area: pie;
+  }
+  .cuerpo {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "head" "medio" "pie";
+  }
+  #table1 {
+    width: 90%;
+    margin: 5%;
+    display: grid;
     align-content: center;
-    margin: 5px;
+    justify-content: center;
+    grid-area: tabla;
+  }
+  .imag {
+    display: grid;
+    justify-content: center;
+    width: 100%;
+  }
+  #prod {
+    grid-area: prod;
+  }
+  #foot {
+    grid-area: foot;
+  }
+  #bod {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "prod" "tabla" "foot";
+  }
+  #tituloprod {
+    margin-top: 20%;
+    margin-bottom: 20%;
+  }
+  #listaproductos {
+    display: none;
+  }
+  #table {
+    display: none;
+  }
+  .uli {
+    display: inline-block;
+    list-style-type: none;
+    text-align: center;
+    padding-left: 10px;
+    padding-top: 5px;
+  }
+  #card1 {
+    width: 100%;
+    padding: 5%;
+    margin: 10%;
+    grid-area: card1;
+    background-color: bisque;
+  }
+  #card2 {
+    width: 100%;
+    padding: 5%;
+    margin: 10%;
+    grid-area: card2;
+    background-color: bisque;
+  }
+  #card3 {
+    width: 100%;
+    padding: 5%;
+    margin: 10%;
+    grid-area: card3;
+    background-color: bisque;
+  }
+  #card4 {
+    width: 100%;
+    padding: 5%;
+    margin: 10%;
+    grid-area: card4;
+    background-color: bisque;
+  }
+  #cabeza {
+    grid-area: cabeza;
+  }
+  #carrusel {
+    display: none;
+  }
+  .presentacion {
+    grid-area: presentacion;
+    margin: 10px;
+    color: white;
+  }
+  #pies {
+    grid-area: pies;
+  }
+  #cerpoindex {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: "cabeza" "presentacion" "card1" " card2" "card3" "card4" "pies";
+  }
+  #buscador {
+    display: none;
+  }
+  a {
+    transition: 0s;
+    color: black;
+    background-color: rgb(242, 239, 239);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  a:hover {
+    color: white;
+    background-color: black;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #card1 {
+    width: 100%;
+    padding: 5%;
+    margin: 10%;
+    grid-area: card1;
+    background-color: bisque;
+  }
+  #card2 {
+    width: 100%;
+    padding: 5%;
+    margin: 10%;
+    grid-area: card2;
+    background-color: bisque;
+  }
+  #card3 {
+    width: 100%;
+    padding: 5%;
+    margin: 10%;
+    grid-area: card3;
+    background-color: bisque;
+  }
+  #card4 {
+    width: 100%;
+    padding: 5%;
+    margin: 10%;
+    grid-area: card4;
+    background-color: bisque;
+  }
+  #cabeza {
+    grid-area: cabeza;
+  }
+  #carrusel {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    grid-area: carrusel;
+  }
+  #pies {
+    grid-area: pies;
+  }
+  #parrafoindex {
+    display: flex;
+    margin: 1px;
+  }
+  #tituloindex {
+    display: flex;
+    background-color: dimgray;
+    background-repeat: no-repeat;
+  }
+  .textoindex {
+    flex-direction: column;
     padding-left: 5px;
     padding-right: 5px;
     padding-top: 5px;
     padding-bottom: 5px;
     border-width: 5px;
     border-color: black;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
+    width: 30%;
+    height: 50%;
     border-style: double;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-
-#dejacontacto {
-    background-position: 610px;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-}
-
-footer {
-    margin-top: 80px;
-    margin-bottom: 80px;
-}
-
-table {
-    display: flex;
-    justify-content: center;
-    background-color: black;
-    padding: 5px;
-    margin-top: 50px;
-    width: 100%;
-}
-.imagenprod{
-    width: 450px;
-}
-
-
-nav {
-    display: grid;
-    justify-content: center;
-}
-
-.cuerpo .medio{
-    display: grid;
-    justify-content: center;
-}
-
-header {
-    background-image: url("https://image.posterlounge.es/images/l/1896910.jpg");
-    background-position-y: 30%;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#listaproductos {
+    margin: 1%;
     color: white;
-    display: grid;
-    list-style-type: none;
-    justify-content: start;
-    width: 100%;
-    border: 5px;
-    border-color: black;
-    border-style: groove;
-    background-color: black;
-    margin-top: 50px;
-
-}
-
-#listaproductos {
-    transition: 0s;
-}
-#listaproductos:hover{
-    color: black;
-    background-color: bisque;
-}
-
-input{
     display: flex;
-    justify-content: center;
-    padding-left: 5px;
-    width: 300px;
-    transition: 0s;
-}
-input:hover{
-    color: white;
-    background-color: black;
-}
-#search {
+    justify-content: first baseline;
+    align-items: flex-start;
+  }
+  #carouselExampleControls {
     display: flex;
-    width: 300px;
-    height: 30px;
-    background-color: black;
-    margin: 3px;
-}
-#boton{
-    background-color: rgb(214, 209, 209);
-}
-
-@media  screen and (min-width:320px) {
-    #logo {
-        height: 50px;
-        top: 70px;
-        }
-    .head{
-        grid-area: head;
-    }
-    .medio{
-        grid-area: medio;
-    }
-    .pie{
-        grid-area: pie;
-    }
-    .cuerpo{
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto auto auto;
-        grid-template-areas: "head""medio""pie";
-    }
-
-#table1 {
-    width: 90%;
+    width: 60%;
     margin: 5%;
-    display:grid;
-    align-content: center;
-    justify-content: center;
-    grid-area: tabla;
-}
-.imag{
-    display:grid;
-    justify-content: center;
-    width:100%;
-}
-#prod {
-    grid-area: prod;
-}
-
-#foot {
-    grid-area: foot;
-}
-
-#bod {
+    border-style: double;
+    border-color: black;
+    border-radius: 5px;
+    padding: 1%;
+    background-color: bisque;
+  }
+  #cerpoindex {
     display: grid;
-    grid-template-columns:auto;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: "prod""tabla""foot";
-}
-#tituloprod{
-    margin-top: 20%;
-    margin-bottom: 20%;
-}
-#listaproductos{
-display: none;
-}
-#table{
-    display: none;
- }
-.uli {
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "cabeza cabeza cabeza cabeza" "carrusel carrusel carrusel carrusel" "card1 card2 card3 card4" "pies pies pies pies";
+  }
+  #cabeza {
+    width: 100%;
+  }
+  .uli {
     display: inline-block;
     list-style-type: none;
     text-align: center;
     padding-left: 10px;
-    padding-top: 5px;
-}
- #card1{
-    width:100%;
-    padding: 5%;
-    margin: 10%;
-    grid-area: card1;
-    background-color: bisque;
-}
-#card2{
-    width:100%;
-    padding: 5%;
-    margin: 10%;
-    grid-area: card2;
-    background-color:bisque;
-}
-#card3{
-    width:100%;
-    padding: 5%;
-    margin: 10%;
-    grid-area: card3;
-    background-color:bisque;
-}
-#card4{
-    width:100%;
-    padding: 5%;
-    margin: 10%;
-    grid-area: card4;
-    background-color:bisque;
-}
-#cabeza{
-    grid-area: cabeza;
-}
-#carrusel{
-    display: none;
-}
-.presentacion{
-    grid-area: presentacion ;
-    margin: 10px;
-    color: white;
-}
-#pies{
-    grid-area: pies;
-}
-#cerpoindex{
+  }
+  #logo {
+    height: 100px;
+    top: 50px;
+  }
+  .head {
+    grid-area: head;
+  }
+  .medio {
+    grid-area: medio;
+  }
+  .pie {
+    grid-area: pie;
+  }
+  .cuerpo {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: auto auto auto auto auto;
-    grid-template-areas: "cabeza" "presentacion" "card1" " card2" "card3" "card4" "pies";
-}
-#buscador{
-    display: none;
-}
-a {
-    transition: 0s;
-    color: black;
-    background-color: rgb(242, 239, 239);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-a:hover{
-    color: white;
-    background-color: black;
-}
-
-
-}
-@media  screen and (min-width:1200px) {
- 
-    #card1{
-        width:100%;
-        padding: 5%;
-        margin: 10%;
-        grid-area: card1;
-        background-color:bisque;
-    }
-    #card2{
-        width:100%;
-        padding: 5%;
-        margin: 10%;
-        grid-area: card2;
-        background-color:bisque;
-    }
-    #card3{
-        width:100%;
-        padding: 5%;
-        margin: 10%;
-        grid-area: card3;
-        background-color:bisque;
-    }
-    #card4{
-        width:100%;
-        padding: 5%;
-        margin: 10%;
-        grid-area: card4;
-        background-color:bisque;
-    }
-    #cabeza{
-        grid-area: cabeza;
-    }
-    #carrusel{
-        display: flex;
-        justify-items: center;
-        align-items: center;
-        grid-area: carrusel;
-    }
-    #pies{
-        grid-area: pies;
-    }
-    #parrafoindex{
-        display: flex;
-        margin: 1px;
-    }
-    #tituloindex{
-        display: flex;
-        background-color: dimgray;
-        background-repeat: no-repeat;
-    }
-    .textoindex{
-        flex-direction: column;
-        padding-left: 5px;
-        padding-right: 5px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        border-width: 5px;
-        border-color: black;
-        width: 30%;
-        height: 50%;
-        border-style: double;
-        margin: 1%;
-        color: white;
-        display: flex;
-        justify-content: first baseline;
-        align-items: flex-start;
-    }
-    
-    #carouselExampleControls{
-        display: flex;
-        width: 60%;
-        margin: 5%;
-        border-style: double;
-        border-color: black;
-        border-radius: 5px;
-        padding: 1%;
-        background-color: bisque;
-     
-    
-     }
-    #cerpoindex{
-        display: grid;
-        grid-template-columns: auto auto auto;
-        grid-template-rows: auto auto auto auto;
-        grid-template-areas: "cabeza cabeza cabeza cabeza" "carrusel carrusel carrusel carrusel" "card1 card2 card3 card4" "pies pies pies pies";
-    }
-    #cabeza{
-        width: 100%;
-    }
-    .uli {
-        display: inline-block;
-        list-style-type: none;
-        text-align: center;
-        padding-left: 10px;
-    }
-    #logo {
-        height: 100px;
-        top: 50px;
-        }
-    .head{
-        grid-area: head;
-    }
-    .medio{
-        grid-area: medio;
-    }
-    .pie{
-        grid-area: pie;
-    }
-    .cuerpo{
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto auto auto;
-        grid-template-areas: "head""medio""pie";
-    }
-    #listaproductos {
-        grid-area: productos;
-}
-#table {
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "head" "medio" "pie";
+  }
+  #listaproductos {
+    grid-area: productos;
+  }
+  #table {
     grid-area: tabla;
-}
-#buscador{
+  }
+  #buscador {
     display: grid;
     grid-area: buscador;
-}
-
-#prod {
+  }
+  #prod {
     grid-area: prod;
-}
-
-#foot {
+  }
+  #foot {
     grid-area: foot;
-}
-
-#bod {
+  }
+  #bod {
     display: grid;
     grid-template-columns: 13% auto;
     grid-template-rows: auto auto auto auto;
-    grid-template-areas: "prod prod" "buscador buscador" "productos tabla""foot foot";
-}
-#tituloprod{
+    grid-template-areas: "prod prod" "buscador buscador" "productos tabla" "foot foot";
+  }
+  #tituloprod {
     margin-top: 70px;
     margin-bottom: 70px;
-}
-#uliprod{
+  }
+  #uliprod {
     display: none;
-}
-#listaproductos{
-    display: grid
-}
-#table1{
-    display: none;
- }
- #table{
+  }
+  #listaproductos {
     display: grid;
- }
- 
- .presentacion{
-display: none;
- }
- a {
+  }
+  #table1 {
+    display: none;
+  }
+  #table {
+    display: grid;
+  }
+  .presentacion {
+    display: none;
+  }
+  a {
     transition: 0s;
     color: black;
     background-color: rgb(242, 239, 239);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-a:hover{
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  a:hover {
     color: white;
     background-color: black;
-}
+  }
 
-}
-
+}/*# sourceMappingURL=style.css.map */
