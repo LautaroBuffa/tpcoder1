@@ -15,7 +15,7 @@ body {
 
 .titulo {
   text-align: center;
-  background-color: dimgray;
+  background-color: dimgrey;
   color: black;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -316,7 +316,7 @@ input:hover {
   }
   #tituloindex {
     display: flex;
-    background-color: dimgray;
+    background-color: dimgrey;
     background-repeat: no-repeat;
   }
   .textoindex {
@@ -431,5 +431,4 @@ input:hover {
     color: white;
     background-color: black;
   }
-
 }/*# sourceMappingURL=style.css.map */
