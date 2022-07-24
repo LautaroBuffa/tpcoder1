@@ -401,7 +401,7 @@ input:hover {
     grid-template-rows: 180px auto auto;
     grid-template-areas: "prod prod" "productos tabla" "foot foot";
   }
-  .titulo {
+  .titulo1 {
     margin-top: 70px;
     margin-bottom: 10px;
   }
