@@ -356,8 +356,8 @@ a:hover{
      }
     #cerpoindex{
         display: grid;
-        grid-template-columns: auto auto auto;
-        grid-template-rows: auto auto auto auto;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: 180px auto auto auto;
         grid-template-areas: "cabeza cabeza cabeza cabeza" "carrusel carrusel carrusel carrusel" "card1 card2 card3 card4" "pies pies pies pies";
     }
     #cabeza{
@@ -385,7 +385,7 @@ a:hover{
     .cuerpo{
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows: auto auto auto;
+        grid-template-rows: 180px auto auto;
         grid-template-areas: "head""medio""pie";
     }
     #listaproductos {
@@ -394,32 +394,25 @@ a:hover{
 #table {
     grid-area: tabla;
 }
-#buscador{
-    display: grid;
-    grid-area: buscador;
-}
-
-
 #prod {
     grid-area: prod;
 }
-
 #foot {
     grid-area: foot;
+}
+#busca{
+    display: none;
 }
 
 #bod {
     display: grid;
     grid-template-columns: 13% auto;
-    grid-template-rows: auto auto auto auto;
-    grid-template-areas: "prod prod" "buscador buscador" "productos tabla""foot foot";
+    grid-template-rows:180px auto auto;
+    grid-template-areas: "prod prod""productos tabla""foot foot";
 }
-#tituloprod{
+.titulo{
     margin-top: 70px;
-    margin-bottom: 70px;
-}
-#uliprod{
-    display: none;
+    margin-bottom: 10px;
 }
 #listaproductos{
     display: grid
