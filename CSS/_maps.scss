@@ -1,4 +1,4 @@
-$mapredes:(facebook:lightblue, instagram: red, twitter:blue);
+/*$mapredes:(facebook:lightblue, instagram: red, twitter:blue);
 @each $red, $color in $mapredes {
     .#{$red} {
         color:$color;

@@ -1,4 +1,4 @@
-@import "variables","bucles","maps";
+@import "variables";
 
 h1 {
     margin-top: 80px;
@@ -230,7 +230,7 @@ input:hover {
     #card1 {
         width: 100%;
         padding: 5%;
-        margin: 10%;
+        margin: 12%;
         grid-area: card1;
         background-color: bisque;
     }
@@ -238,7 +238,7 @@ input:hover {
     #card2 {
         width: 100%;
         padding: 5%;
-        margin: 10%;
+        margin: 12%;
         grid-area: card2;
         background-color: bisque;
     }
@@ -246,7 +246,7 @@ input:hover {
     #card3 {
         width: 100%;
         padding: 5%;
-        margin: 10%;
+        margin: 12%;
         grid-area: card3;
         background-color: bisque;
     }
@@ -254,7 +254,7 @@ input:hover {
     #card4 {
         width: 100%;
         padding: 5%;
-        margin: 10%;
+        margin: 12%;
         grid-area: card4;
         background-color: bisque;
     }
