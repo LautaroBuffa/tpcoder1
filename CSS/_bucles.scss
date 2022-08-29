@@ -1,11 +1,11 @@
-/*@for $i from 2 to 7 {
+@for $i from 2 to 7 {
     h#{$i} {
         font-size: $i - 10%;
     }
 }
-/*$colores:"grey", "black"; 
+$colores:"grey", "black"; 
 @each $color in $colores {
     .#{$color} {
         color:#{$color};
     }
-}*/
+}

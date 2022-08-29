@@ -426,4 +426,8 @@ input:hover {
     color: white;
     background-color: black;
   }
+  #lista {
+    background-color: black;
+    margin-top: 50px;
+  }
 }/*# sourceMappingURL=style.css.map */
